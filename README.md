@@ -11,13 +11,8 @@ First, run the development server:
 npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 ## About Project
-1) Spreadsheet Application made using NextJS with implementation of tailwindCSS
+ Spreadsheet Application made using NextJS with implementation of tailwindCSS
 with features :-
-Grid Rendering: Render a grid of 1000 blank cells. The grid should be efficiently handled and
-performant.
-Undo/Redo: Implement undo and redo functionality to revert changes made to the cells.
-
-Pagination : Implement pagination or infinite scrolling for handling large datasets efficiently
 
 
 ## Learn More  
