@@ -12,7 +12,6 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 ## About Project
  Spreadsheet Application made using NextJS with implementation of tailwindCSS
-with features :-
 
 
 ## Learn More  
