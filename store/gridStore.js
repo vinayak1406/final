@@ -20,32 +20,10 @@ export const useGridStore = create((set, get) => ({
       };
     }),
 
-  undo: () =>
-    set(state => {
-      if (state.history.length === 0) return state;
-      const previousState = state.history[state.history.length - 1];
-      return {
-        cellData: previousState.cellData,
-        history: state.history.slice(0, -1),
-        future: [state.cellData, ...state.future],
-      };
-    }),
+  
+  
 
-  redo: () =>
-    set(state => {
-      if (state.future.length === 0) return state;
-      const nextState = state.future[0];
-      return {
-        cellData: nextState,
-        history: [...state.history, state.cellData],
-        future: state.future.slice(1),
-      };
-    }),
-
-  setPage: page =>
-    set(state => ({
-      currentPage: page,
-    })),
+ 
 
   getTotalPages: () => Math.ceil(get().totalCells / get().pageSize),
 
